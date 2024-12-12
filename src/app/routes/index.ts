@@ -2,7 +2,8 @@ import { Router } from 'express';
 
 import { AuthRoutes } from '../modules/auth/auth.route';
 import { UserRoutes } from '../modules/user/user.route';
-import { LessonRoutes } from '../modules/Lesson/lesson.route';
+import { LessonRoutes } from '../modules/lesson/lesson.route';
+import { VocabularyRoutes } from '../modules/vocabulary/vocabulary.route';
 
 const router = Router();
 
@@ -18,6 +19,10 @@ const moduleRoutes = [
   {
     path : '/lessons',
     route : LessonRoutes,
+  },
+  {
+    path : '/vocabularies',
+    route : VocabularyRoutes
   }
 ];
 
