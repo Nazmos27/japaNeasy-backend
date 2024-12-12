@@ -2,7 +2,7 @@ import catchAsync from '../../utils/catchAsync';
 import { UserServices } from './user.service';
 
 const getAllUser = catchAsync(async (req, res) => {
-  const result = await UserServices.getAllUserFromDB(req.query);
+  const result = await UserServices.getAllUserFromDB();
 
   res.status(200).json({
     success: true,
